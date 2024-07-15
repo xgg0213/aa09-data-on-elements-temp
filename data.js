@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const addName = document.getElementById('add');
     addName.addEventListener('click', (e) => {
-        // why do I have to add this line?
+        // why do I have to add this line?: 
+        // answer: ensures the page does not reload when the click happens, specifically useful for buttons within forms
         e.preventDefault();
 
         const ul = document.getElementById('shopping-list');
